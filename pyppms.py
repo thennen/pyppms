@@ -13,7 +13,7 @@ import datetime
 import os
 import copy
 import csv
-from itertools import izip_longest as zipl
+from itertools import zip_longest as zipl
 from matplotlib import pyplot as plt
 import seq
 import cmds
@@ -1193,7 +1193,6 @@ def wiz(folderfilter='', filefilter=''):
                 print(os.path.split(rf)[1])
                 hasrecoil[i] = rf
                 break
-        print ' '
 
     choice = raw_input('Continue? ')
     if choice == 'q' or choice == 'n':
